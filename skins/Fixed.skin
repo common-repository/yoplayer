@@ -1,0 +1,73 @@
+/*
+ * Yoplayer Skin - Fixed
+ *
+ * * No centre graphic
+ * * Various control layouts for different player sizes
+ * * Fixed controlbar outside video area
+ * * Full controls
+ *
+ * This skin is part of the Yoplayer plugin for Wordpress
+ *
+ * Copyright (C) 2013 - 2014 Yospace Technologies Ltd
+ */
+{
+    "Extends": "int://internal.skin",
+    "ControlBarPosition": "BOTTOM",
+    "ControlBarLeftMargin": 20,
+    "ControlBarRightMargin": 20,
+    "ControlBarBottomMargin": 20,
+    "ControlBarHeight": 16,
+    "ControlBarPadding": 8,
+    "ControlDim": 0.6,
+    "BackgroundColour": "000000",
+    "VolumeWidth": 100,
+    "Controls": [
+        "Play",
+        "Stop",
+        "Text %T",
+        "Position",
+        "Text %D",
+        "Pan",
+        "Volume",
+        "CC",
+        "FullScreen",
+        "Debug"
+    ],
+    "Graphics": {
+        "CenterLogo": "int://none"
+    },
+    "SubSkins": [
+        {
+            "MaxWidth": 550,
+            "MinWidth": 400,
+            "VolumeWidth": 75,
+            "Controls": [
+                "Play",
+                "Stop",
+                "Text %P / %D",
+                "Position",
+                "Volume",
+                "CC",
+                "FullScreen",
+                "Debug"
+            ]
+        },
+        {
+            "MaxWidth": 399,
+            "VolumeWidth": 75,
+            "Graphics": {
+                "Logo": "int://none"
+            },
+            "Controls": [
+                "Play",
+                "Text %P",
+                "Position",
+                "VolumeButton",
+                "CC",
+                "FullScreen",
+                "Debug"
+            ]
+        }
+    ]
+    
+}

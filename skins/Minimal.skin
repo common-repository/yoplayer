@@ -1,0 +1,34 @@
+/*
+ * Yoplayer Skin - Minimal
+ *
+ * * No centre graphic
+ * * Single Layout
+ * * Floating, auto-dim controlbar
+ * * Minimal controls
+ *
+ * This skin is part of the Yoplayer plugin for Wordpress
+ *
+ * Copyright (C) 2013 - 2014 Yospace Technologies Ltd
+ */
+{
+    "Extends": "int://internal.skin",
+    "ControlBarPosition": "FLOATDIM",
+    "ControlBarLeftMargin": 0,
+    "ControlBarRightMargin": 0,
+    "ControlBarBottomMargin": 0,
+    "ControlBarHeight": 16,
+    "BackgroundColour": "000000",
+    "VolumeWidth": 100,
+    "Controls": [
+        "Play",
+        "Stop",
+        "Position",
+        "VolumeButton",
+        "CC",
+        "FullScreen",
+        "Debug"
+    ],
+    "Graphics": {
+        "CenterLogo": "int://none"
+    }
+}

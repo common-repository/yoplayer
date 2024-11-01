@@ -1,0 +1,88 @@
+/*
+ * Yoplayer Skin - Black-Light
+ *
+ * * No centre graphic
+ * * Various control layouts for different player sizes
+ * * Floating, auto-hide controlbar
+ *
+ * This skin is part of the Yoplayer plugin for Wordpress
+ *
+ * Copyright (C) 2013 - 2014 Yospace Technologies Ltd
+ */
+{
+    "Extends": "int://internal.skin",
+    "ControlBarPosition": "FLOATHIDE",
+    "BackgroundColour": "000000",
+    "VolumeWidth": 100,
+    "ControlBarLeftMargin": 20,
+    "ControlBarRightMargin": 20,
+    "ControlBarBottomMargin": 20,
+    "ControlBarHeight": 16,
+    "ControlBarPadding": 8,
+    "ControlBarDim": 0.2,
+    "ControlBarDimDelay": 1.5,
+    "ControlBarDimSpeed": 0.1,
+    "ControlDim": 0.5,
+    "ControlBarTextColour": "000000",
+    "WaitLeft": -1,
+    "WaitRight": -1,
+    "WaitTop": -1,
+    "WaitBottom": -1,
+    "WaitSpinAngle": 22.5,
+    "WaitSpinTime": 0.1,
+    "Controls": [
+        "Play",
+        "Stop",
+        "Text %T / %D",
+        "Position",
+        "Pan",
+        "Volume",
+        "CC",
+        "FullScreen",
+        "Debug"
+    ],
+    "Graphics": {
+        "CenterLogo": "int://none",
+        "ControlBarTopLeft": "ControlBar-TopLeft.png",
+        "ControlBarTopRight": "ControlBar-TopRight.png",
+        "ControlBarBottomLeft": "ControlBar-BottomLeft.png",
+        "ControlBarBottomRight": "ControlBar-BottomRight.png",
+        "ControlBarTop": "ControlBar-Top.png",
+        "ControlBarLeft": "ControlBar-Left.png",
+        "ControlBarBottom": "ControlBar-Bottom.png",
+        "ControlBarRight": "ControlBar-Right.png",
+        "ControlBarFill": "ControlBar-Fill.png"
+    },
+    "SubSkins": [
+        {
+            "MaxWidth": 550,
+            "MinWidth": 400,
+            "VolumeWidth": 100,
+            "Controls": [
+                "Play",
+                "Stop",
+                "Text %P / %D",
+                "Position",
+                "Volume",
+                "CC",
+                "FullScreen",
+                "Debug"
+            ]
+        },
+        {
+            "MaxWidth": 399,
+            "Graphics": {
+                "Logo": "int://none"
+            },
+            "Controls": [
+                "Play",
+                "Text %P",
+                "Position",
+                "VolumeButton",
+                "CC",
+                "FullScreen",
+                "Debug"
+            ]
+        }
+    ]
+}
